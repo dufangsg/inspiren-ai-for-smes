@@ -1,5 +1,5 @@
 :root{--ink:#14213D;--bg:#FAF8F4;--card:#fff;--muted:#4A5468;--line:#E6E1D6;--brand:#14213D;
---amber:#E8A317;--teal:#1A8F8A;--indigo:#3D4C9E;--coral:#E2624B;--accent:var(--ink);--maxw:1120px}
+--amber:#E8A317;--teal:#1A8F8A;--indigo:#3D4C9E;--coral:#E2624B;--green:#3A7D44;--accent:var(--ink);--maxw:1120px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.6}
@@ -93,6 +93,7 @@ body.ind-construction{--accent:var(--amber)}
 body.ind-clinics{--accent:var(--teal)}
 body.ind-professional{--accent:var(--indigo)}
 body.ind-retail{--accent:var(--coral)}
+body.ind-setting-up{--accent:var(--green)}
 .tag-ind{display:inline-block;font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:999px;background:#fff;border:1px solid var(--line)}
 .tag-ind:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent);margin-right:6px}
 form.review{display:grid;gap:14px;max-width:620px}
