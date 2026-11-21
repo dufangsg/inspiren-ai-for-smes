@@ -126,3 +126,20 @@ footer.site ul{list-style:none;padding:0;margin:8px 0;display:flex;gap:16px;flex
 .article-card{display:block;text-decoration:none;color:inherit}
 .article-card h3{margin:8px 0}
 .article-card:hover h3{text-decoration:underline}
+
+@media(max-width:699px){
+  body{padding-bottom:76px}
+  section{padding:40px 0}
+  .hero{padding:30px 0 26px}
+  h1{font-size:1.85rem}
+  header.site .wrap{min-height:0;gap:8px 14px;padding-top:8px;padding-bottom:8px}
+  .brand{font-size:1.05rem}
+  nav.main{gap:6px 14px;font-size:.92rem}
+  nav.main a.btn{display:none}
+  .wrap{padding:0 16px}
+  .card{padding:18px}
+  .closing{padding:4px 0}
+  .btn-row .btn{width:100%;text-align:center}
+  .btn-row{flex-direction:column;align-items:stretch}
+  .article p,.article li{font-size:1rem}
+}
