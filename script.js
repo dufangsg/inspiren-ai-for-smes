@@ -10,7 +10,12 @@ document.addEventListener('DOMContentLoaded',function(){
       var body=new URLSearchParams(new FormData(form)).toString();
       fetch('/contact/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body})
         .then(function(r){ if(r.ok){ location.href='/thanks/'; } else { throw new Error(r.status); } })
-        .catch(function(){ alert('Sorry, something went wrong. Please try again, or email sales@inspirentech.co.'); });
+        .catch(function(){
+          var v=function(n){var el=form.elements[n];return el?el.value:'';};
+          var subj='Review request: '+v('industry');
+          var lines=['Name: '+v('name'),'Company: '+v('company'),'Industry: '+v('industry'),'Staff: '+v('staff'),'Process: '+v('process'),'Phone: '+v('phone'),'Email: '+v('email'),'Language: '+v('language')];
+          location.href='mailto:sales@inspirentech.co?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(lines.join('\n'));
+        });
     });
   }
   document.querySelectorAll('a[data-industry]').forEach(function(a){
