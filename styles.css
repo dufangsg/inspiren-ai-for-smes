@@ -113,3 +113,16 @@ footer.site ul{list-style:none;padding:0;margin:8px 0;display:flex;gap:16px;flex
 @media(max-width:699px){.mobile-bar{display:flex;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px;gap:10px;z-index:30}
 .mobile-bar .btn{flex:1;text-align:center;padding:12px 10px}}
 .thanks{padding:80px 0;text-align:left}
+
+.article{max-width:760px}
+.article h2{margin-top:44px}
+.article h3{margin-top:28px}
+.article p,.article li{font-size:1.05rem}
+.article table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.95rem}
+.article th,.article td{border-bottom:1px solid #E2DED5;padding:10px 8px;text-align:left;vertical-align:top}
+.article th{font-weight:600}
+.visual{margin:32px 0}
+.visual svg{width:100%;height:auto;display:block}
+.article-card{display:block;text-decoration:none;color:inherit}
+.article-card h3{margin:8px 0}
+.article-card:hover h3{text-decoration:underline}
